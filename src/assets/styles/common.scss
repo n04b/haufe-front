@@ -1,0 +1,27 @@
+// imports
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Amatic+SC&display=swap");
+
+// vars
+
+$regularFont: "Open Sans", sans-serif;
+$titleFont: "Amatic SC", sans-serif;
+
+$backgroundColor: #ffffff;
+$defaultTextColor: #333333;
+$logoColorOne: #124247;
+$logoColorTwo: #c4d560;
+
+// mixins
+
+@mixin computer {
+  @media only screen and (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media only screen and (max-width: 599px) {
+    @content;
+  }
+}

@@ -1,0 +1,64 @@
+@import "../assets/styles/common";
+
+.PageCharacter {
+  margin: 0 50px 50px 50px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include phone {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  & .photo {
+    margin-bottom: 25px;
+
+    @include computer {
+      border-radius: 5px;
+      width: 300px;
+      height: 300px;
+      margin-right: 50px;
+    }
+
+    @include phone {
+      width: 100%;
+    }
+  }
+
+  & .info {
+    width: calc(100% - 350px);
+    min-width: 400px;
+
+    @include phone {
+      width: 100%;
+      min-width: auto;
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+  }
+
+  & .title-wrapper {
+    position: relative;
+    display: inline-block;
+
+    & .FavoriteToggle {
+      position: absolute;
+      right: -20px;
+      top: 0;
+    }
+  }
+
+  & .title {
+    font-family: $titleFont;
+    margin: 0 0 50px 0;
+    font-size: 4rem;
+  }
+
+  & .line {
+    margin-bottom: 0.4rem;
+
+    & .label {
+      font-weight: bold;
+    }
+  }
+}

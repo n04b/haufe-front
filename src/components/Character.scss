@@ -1,0 +1,32 @@
+@import "../assets/styles/common";
+
+.Character {
+  font-family: $titleFont;
+  text-align: center;
+  width: 250px;
+  margin-bottom: 50px;
+
+  &:hover {
+    & .photo {
+      box-shadow: 0 0 0 10px $logoColorTwo;
+    }
+  }
+
+  & a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  & .photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    background-color: lightgray;
+  }
+  & .name {
+    font-size: 2rem;
+    line-height: 1em;
+    margin: 0 0 10px 0;
+  }
+}

@@ -1,0 +1,18 @@
+.FavoriteToggle {
+  color: lightgray;
+  cursor: not-allowed;
+
+  &.isEnabled {
+    color: gray;
+    cursor: pointer;
+
+    &:hover {
+    }
+    &:active {
+    }
+  }
+
+  &.isFavorite {
+    color: red;
+  }
+}

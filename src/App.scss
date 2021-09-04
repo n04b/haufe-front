@@ -1,0 +1,19 @@
+@import "./assets/styles/common";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  font-family: $regularFont;
+  font-size: 1.2rem;
+  color: $defaultTextColor;
+}
+
+.App {
+}

@@ -1,0 +1,42 @@
+@import "../assets/styles/common";
+
+.PageLogin {
+  text-align: center;
+  padding: 0 25px 50px 25px;
+
+  & input {
+    max-width: 300px;
+    width: 100%;
+    display: block;
+    font-size: 1.6em;
+    margin: 0 auto 25px auto;
+    padding: 10px;
+    flex-shrink: 1;
+    border-radius: 5px;
+    border: 1px gray solid;
+
+    &::placeholder {
+      color: lightgray;
+    }
+  }
+  & .submit-button {
+    display: block;
+    padding: 15px 30px;
+    margin: 0 auto 25px auto;
+    border: 0;
+    background-color: $logoColorTwo;
+    cursor: pointer;
+    font-family: $titleFont;
+    font-size: 2em;
+    border-radius: 5px;
+
+    &:hover,
+    &:focus {
+      background-color: darken($logoColorTwo, 10%);
+    }
+
+    &:active {
+      background-color: darken($logoColorTwo, 15%);
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import "../assets/styles/common";
+
+.PageNotFound {
+  .error-text {
+    font-family: $titleFont;
+    text-align: center;
+    font-weight: normal;
+    font-size: 5rem;
+  }
+}

@@ -1,0 +1,17 @@
+@import "../assets/styles/common";
+
+.LoginButton {
+  position: absolute;
+  right: 50px;
+  top: 25px;
+  font-size: 1.6rem;
+  cursor: pointer;
+
+  @include phone {
+    right: 25px;
+  }
+
+  & * {
+    color: inherit;
+  }
+}

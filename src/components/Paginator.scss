@@ -1,0 +1,26 @@
+@import "../assets/styles/common";
+
+.Paginator {
+  text-align: center;
+  margin-bottom: 50px;
+
+  & .item,
+  & .arrow {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    color: lightgray;
+
+    &:hover {
+      color: gray;
+    }
+
+    &:active {
+      color: $defaultTextColor;
+    }
+
+    &.current {
+      color: $defaultTextColor;
+    }
+  }
+}
