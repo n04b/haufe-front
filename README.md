@@ -19,4 +19,4 @@ cd haufe-docker
 docker compose up -d
 ```
 
-After setup open `http://localhost:3000`.
+After setup open `http://localhost:3000`. Default user is `m` and pass is `12345`. 
